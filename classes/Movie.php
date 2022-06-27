@@ -1,18 +1,18 @@
 <?php
-class Movies {
+class Movie {
     public $title;
     public $movieDirector;
     public $year;
-    public $cast;
+    public $producer;
     public $genre;
     public $oscar;
 
-    function __construct($_title, $_movieDirector, $_year, $_cast, $_genre, $_oscar)
+    function __construct($_title, $_movieDirector, $_year, $_producer, $_genre, $_oscar)
     {
         $this->title =$_title;
         $this->movieDirector =$_movieDirector;
         $this->year =$_year;
-        $this->cast =$_cast;
+        $this->producer =$_producer;
         $this->genre =$_genre;
         $this->oscar =$_oscar;
     }
