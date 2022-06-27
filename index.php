@@ -23,5 +23,19 @@ $movies = [
 </head>
 <body>
     <h1>Movie List</h1>
+    <ul>
+        <?php foreach ($movies as $movie) { ?>
+            <li>
+                <h3><?php echo $movie->title; ?></h3>
+                <h4><i>Regista:</i> <?php echo $movie->movieDirector; ?></h4>
+                <p>
+                    <div><strong>Anno di uscita:</strong> <?php echo $movie->year; ?></div>
+                    <div><strong>Produttore:</strong> <?php echo $movie->producer; ?></div>
+                    <div><strong>Genere:</strong> <?php echo $movie->genre; ?></div>
+                    <div><strong>Oscar:</strong> <?php echo $movie->oscar; ?></div>
+                </p>
+            </li>
+        <?php } ?>
+    </ul>
 </body>
 </html>

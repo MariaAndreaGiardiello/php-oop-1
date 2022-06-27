@@ -19,9 +19,9 @@ class Movie {
 
     public function getOscar() {
         if($this->oscar == true) {
-            return $this->oscar = 'Vincitore premio Oscar';
+            return $this->oscar = '<strong>Vincitore premio Oscar</strong>';
         }
-        return 'No Oscar';
+        return '<strong>No Oscar</strong>';
     }
 }
 ?>
