@@ -32,7 +32,7 @@ $movies = [
                     <div><strong>Anno di uscita:</strong> <?php echo $movie->year; ?></div>
                     <div><strong>Produttore:</strong> <?php echo $movie->producer; ?></div>
                     <div><strong>Genere:</strong> <?php echo $movie->genre; ?></div>
-                    <div><strong>Oscar:</strong> <?php echo $movie->oscar; ?></div>
+                    <div><strong>Oscar:</strong> <?php echo $movie->getOscar(); ?></div>
                 </p>
             </li>
         <?php } ?>
